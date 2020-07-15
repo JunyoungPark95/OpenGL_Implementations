@@ -1,6 +1,6 @@
 # Implementations
 
-##Trakball camera
+## Trakball camera
 Rotate the camera by dragging
 Dolly in and dolly out by scrolling (i.e., mouse wheeling)
 Zoom in and Zoom out
@@ -9,7 +9,7 @@ The camera which is orbiting around virtual sphere.
 
 ![Alt text](doc/track.png)
 
-##Lighting
+## Lighting
 Apply phong shading model (ambient/diffuese/specular) and Gouraud Shading option
 
 -Operation
