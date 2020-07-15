@@ -1,11 +1,8 @@
-# Student Information
+# Implementations
 
-student name: 박준영, Junyoung Park
+Rotate simple triangle with respect to time
 
-
-student id: 20181009
-
-
+Change simple triangle color when clicking the triangle or background
 
 # Result images
 ![Alt text](doc/캡처1.PNG)
