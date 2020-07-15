@@ -1,9 +1,8 @@
-# Student Information
+# Implementations
 
-student name: 박준영, Junyoung Park
+Load and draw mesh (e.g., stanford bunny model)
 
-
-student id: 20181009
+Implement picking with front and back buffer method via opengl
 
 -Operation
 
