@@ -1,13 +1,6 @@
-# Student Information
+# Implementations
 
-student name: 박준영, Junyoung Park
-
-
-student id: 20181009
-
-# Task list
-
-## 1. Materials (10 pts)
+## 1. Materials
 
 ### This section covers the implementation of the following meterials.
 - Lambertian
@@ -41,8 +34,6 @@ Here are definitions.
 ![Alt text](doc/snell.PNG)
 ![Alt text](doc/Schlick.PNG)
 
-> GIST, 2019 Computer Graphics - spring - Witted ray tracing lecture note
-
 Then, I apply this concept to my dielectric scattering function, I successfully render this image below.
 
 ![Alt text](doc/dielectric.png)
@@ -57,7 +48,7 @@ The last section, I implemented the sphere of light. Since direct sampling is no
 
 ![Alt text](doc/area_light.png)
 
-## 2. Anti-aliasing (5 pts)
+## 2. Anti-aliasing
 
 This technique is noise reduction that caused by lack of number of ray samples in each pixels. So, I shoot multiple rays by giving randomness inside a current camera pixel. here is implementation code below.
 
@@ -80,14 +71,14 @@ Then, average all samples of one pixel. The figure below shows the rendering res
 ![Alt text](doc/16spp.png)
 ![Alt text](doc/128spp.png)
 
-## 3. Indirect lighting (5 pts)
+## 3. Indirect lighting
 
 The main purpose of this section is to implement integrator by considering multiple bounce. This technique is used to shading the color that is hit and scattered by repeating it back to a pre-defined depth. The figure below shows the rendering results using 1 depth(left) and 15 depth(right). After that, I sucessfully can check that color bleeding effects, soft shadows, and so on.
 
 ![Alt text](doc/depth1.png)
 ![Alt text](doc/depth15.png)
 
-## 4. Direct light sampling (5 pts)
+## 4. Direct light sampling
 
 In this section, I have prepared several experimental cases to see whether direct lighting is working properly or not. 
 If the radius of the light sphere has a very small value, the rendering result should be a very dark one. Because there is a significant decrease in the probability that light rays hit into the diffused sphere.
@@ -133,13 +124,11 @@ This is the result of performing the same procedure in test scene1. the results 
 <img src="doc/turnoff_test2.png" width="256"></img>
 <img src="doc/turnon_test2.png" width="256"></img>
 
-## 5. Defocus blur (5 pts)
+## 5. Defocus blur
 
 In this section, blur effect was implemented according to the focal length of the camera. I followed given tutorial and lecture note below. 
 
 <img src="doc/lecture_note_blur.PNG" width="512"></img>
-
-> GIST, 2019 Computer Graphics - spring - Witted ray tracing lecture note
 
 <img src="doc/tutorial_blur.PNG" width="512"></img>
 
@@ -165,5 +154,3 @@ Same as above section, I prepared an experiment on two scene here. I rendered ho
 
 <img src="doc/focal_length_1_test2.png" width="256"></img>
 <img src="doc/focal_length_4_test2.png" width="256"></img>
-
-
